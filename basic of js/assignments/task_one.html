@@ -1,0 +1,52 @@
+<!-- # Build a page with a text box to accept ID
+ Provide a button to register after entering ID
+ Collect all the patients who have registered into a list
+ Display unique list of patients who have registered -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var arrayofpatients = [];
+    var count = 0;
+    function addpatient() {
+        id = document.getElementById("id").value;
+        if (id == "") {
+            alert("Please enter ID");
+        } else {
+            // listofpatients.add(id);
+            arrayofpatients[count++] = id;
+            document.getElementById("id").value = "";
+            // console.log(listofpatients);
+        }
+
+    }
+    function showall() {
+        for (var value of arrayofpatients) {
+            console.log(value);
+        }
+    }
+    function showunique() {
+        var listofpatients = new Set(arrayofpatients);
+        for (var value of listofpatients) {
+            document.write(value + "<br>");
+        }
+    }
+</script>
+
+<body>
+
+    <input type="text" id="id">
+    <input type="button" value="submit" onclick=addpatient() />
+    <input type="button" value="show all" onclick=showall() />
+    <input type="button" value="show unique" onclick=showunique() />
+
+</body>
+
+</html>
