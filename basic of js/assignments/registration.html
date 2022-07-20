@@ -1,0 +1,79 @@
+<!-- Extend the registration app to add more fields
+to take name, email, mobile, address etc.
+Create a table and show each new user on the table.
+For each new user generate a random number and use it as ID.
+In case ID is already generate new ID. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let i = 1;
+    function validate() {
+        var table = document.getElementById("table2");
+        var row = table.insertRow(-1);
+        row.insertCell(0).innerHTML = i;
+        i++;
+        row.insertCell(1).innerHTML = document.getElementById("name").value;
+        row.insertCell(2).innerHTML = document.getElementById("email").value;
+        row.insertCell(3).innerHTML = document.getElementById("mobile").value;
+        row.insertCell(4).innerHTML = document.getElementById("address").value;
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("mobile").value = "";
+        document.getElementById("address").value = "";
+
+
+    }
+
+</script>
+
+<body>
+    <form onsubmit="return false">
+        <table id="table">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" id="name" class="uielements"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" id="email" class="uielements"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" name="mobile" id="mobile" class="uielements"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" id="address" class="uielements"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" id="btnadd" value="Submit" onclick='validate()'>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+    <table id="table2" border="1">
+        <tr>
+            <th>id</th>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Mobile</td>
+            <td>Address</td>
+        </tr>
+
+
+
+
+</body>
+
+</html>
