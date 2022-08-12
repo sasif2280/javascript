@@ -31,8 +31,8 @@ class StudentCls extends PersonCls {
 }
 
 // creating an object of sub class
-const sreekar = new StudentCls("Sreekar B", 2009, "Comp. Sci.");
+const asif = new StudentCls("asif ", 1999, "B tech.");
 // has access to instance method of sub class
-sreekar.displayCourse();
+asif.displayCourse();
 // also has access to method inherited from base class
-sreekar.calcAge();
+asif.calcAge();
