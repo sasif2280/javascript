@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
+
 
 </head>
 
@@ -15,38 +16,43 @@
 
     <div class="container-form">
 
-        <form action="#">
+        <form method="POST">
             <h2>appointment page</h2>
 
             <div class="form-field">
                 <p>Your name </p>
-                <input type="text" placeholder="Your name" id="name">
+                <input type="text" placeholder="Your name" name="name">
             </div>
             <div class="form-field">
                 <p>Your e-mail </p>
-                <input type="text" placeholder="Your e-mail" id="mail">
+                <input type="text" placeholder="Your e-mail" name="mail">
             </div>
             <div class="form-field">
                 <p>Date:- </p>
-                <input type="date" id="date">
+                <input type="text" name="date">
             </div>
             <div class="form-field">
                 <p>Time:- </p>
-                <input type="time" id="time">
+                <input type="text" name="time">
             </div>
             <div class="form-field">
                 <p>no of people:- </p>
-                <select name="select" id="sel">
-                    <option value="1">1 person</option>
-                    <option value="2">2 person</option>
-                    <option value="3">3 person</option>
-                    <option value="4">4 person</option>
-                </select>
+                <input type="text" name="sel">
+
             </div>
 
 
             <button class="btn" id="btn1">submit</button>
-            <script src="./script.js"></script>
+            <!-- <script src="script.js"></script> -->
+
+
+
+
+
+
+
+
+
 
 
         </form>
