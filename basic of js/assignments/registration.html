@@ -33,10 +33,28 @@ In case ID is already generate new ID. -->
     }
 
 </script>
+<style>
+    .t1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 210px;
+        color: rgb(8, 11, 1);
+        border: solid black 2px;
+    }
+
+
+    .t2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 210px;
+        color: rgb(8, 11, 1);
+        border: solid black 2px;
+    }
+</style>
 
 <body>
     <form onsubmit="return false">
-        <table id="table">
+        <table id="table" class="t1">
             <tr>
                 <td>Name</td>
                 <td><input type="text" name="name" id="name" class="uielements"></td>
@@ -62,7 +80,7 @@ In case ID is already generate new ID. -->
         </table>
     </form>
 
-    <table id="table2" border="1">
+    <table id="table2" border="1" class="t2">
         <tr>
             <th>id</th>
             <td>Name</td>

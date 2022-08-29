@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- <p id="text" class="dummy"></p>
-    <p id="timer"></p>
-    <button>Click me</button> -->
-    <!-- <input type="text" />-->
-    <input type="button" id="getdata" value="Get Data" />
-    <input type="text" name="user" id="user" />
-    <input type="text" name="age" id="age" />
-    <input type="text" name="address" id="address" />
-    <input type="text" name="mobile" id="mobile" />
-    <input type="text" name="status" id="status" />
-    <input type="button" id="senddata" value="Send Data" />
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+</head>
+
+<body>
+  <center>
+    <h1>Mini Project</h1>
+  </center>
+  <hr>
+  <center>
+    <h3>Patient Management System</h3>
+    <input type="button" value="Get Patient Data" id="getdata">
+    <table id="table1" border="1">
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Gender</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <TBODY id="tableBody">
+
+      </TBODY>
+    </table>
+    <fieldset>
+      <legend>Enter New Patient</legend>
+      FirstName: <input type="text" id="fname"><br>
+      LastName: <input type="text" id="lname"><br>
+      Gender: <input type="text" id="gender"><br>
+      Age: <input type="text" id="age"><br>
+      <input type="button" value="Save Patient Data" id="savedata">
+      <div id="op"></div>
+    </fieldset>
+  </center>
   <script src="06_server_test.js"></script>
+</body>
+
 </html>

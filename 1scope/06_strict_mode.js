@@ -1,10 +1,10 @@
 // global strict mode
 // "use strict";
 // cannot use variables without declaring first
-// x = 5;
-// console.log(x);
+x = 5;
+console.log(x);
 
-// print();
+print();
 
 function print() {
   // local strict mode
@@ -14,5 +14,5 @@ function print() {
 }
 
 // cannot delete variables or functions or objects
-let z = 10;
-delete z;
+// let z = 10;
+// delete z;

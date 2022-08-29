@@ -21,19 +21,26 @@
     </script>
     <!-- for styling -->
     <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .title {
-            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
             width: 210px;
-            color: yellowgreen;
+            color: rgb(8, 11, 1);
             border: solid black 2px;
         }
 
         input[type="button"] {
-            background-color: rgb(133, 215, 133);
-            color: black;
+            background-color: rgb(5, 12, 16);
+            color: white;
             border: solid black 2px;
-            width: 100%
+            width: 100%;
+            border-radius: 25%;
         }
 
         input[type="text"] {
@@ -47,7 +54,7 @@
 
 <body>
     <div class=title> Calculator</div>
-    <table border="2">
+    <table border="2" class="center">
         <tr>
             <td colspan="3"><input type="text" id="result" /></td>
             <!-- clr() function will call clr to clear all value -->
